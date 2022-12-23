@@ -29,10 +29,12 @@ const startWatch = () => {
 };
 
 const stopWatch = () => {
+  counter = true;
   clearInterval(watchCounterId);
 };
 
 const restWatch = () => {
+  counter = true;
   clearInterval(watchCounterId);
   second = minute = hour = 0;
   display.innerText = "00 : 00 : 00";
